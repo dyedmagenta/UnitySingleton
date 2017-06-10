@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CreatorManager : MonoBehaviour
 {
-    private Creator[] _creators;
+    //CreatorManager is responsible for calling creators spawn methods
 
-	void Start ()
+    private Creator[] _creators;
+    void Start ()
 	{
 	    _creators = GetComponentsInChildren<Creator>();
 	}

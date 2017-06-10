@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SingletonProp : MonoBehaviour {
+    //SingletonProp is just implementation of singleton pattern
 
     //When the gameobject is created
     private void Awake()
@@ -10,7 +11,7 @@ public class SingletonProp : MonoBehaviour {
         if (Instance == null)
         {
             Instance = this;
-            //Singleton gameObject is persisten through scenes
+            //Singleton gameObject is persistent through scenes
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -19,7 +20,7 @@ public class SingletonProp : MonoBehaviour {
         }
     }
     
-    //Saves Instance in static property it can be set only by Singleton itself
+    //Saves Instance in static property and it can be set only by SingletonProp instance itself
     public static SingletonProp Instance { get; private set; }
 
 

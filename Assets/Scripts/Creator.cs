@@ -7,13 +7,13 @@ public class Creator : MonoBehaviour
 {
     
     //How many props will be spawned with one stream
-    public int StreamSize = 40;
+    public int StreamSize = 400;
     //How strong the stream will be
     public int StreamForce = 10;
     //Max time between spawns in single stream
-    public float MaxSpawnTime = 0.5f;
+    public float MaxSpawnTime = 0.1f;
     //Min time between spawns in single stream
-    public float MinSpawnTime = 0.5f;
+    public float MinSpawnTime = 0.05f;
 
     //Basic Simple Props
     public GameObject[] Props;
